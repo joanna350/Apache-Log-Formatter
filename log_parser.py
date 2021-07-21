@@ -4,6 +4,7 @@ from os import listdir
 from os.path import isfile, join
 from argparse import ArgumentParser
 
+
 class ApacheLogFormatter():
 
     json = []
@@ -135,7 +136,6 @@ class ApacheLogFormatter():
                 line = {}
                 line['year'] = y
 
-
     def export_json(self, output):
         '''
         export the data to the designated filepath
@@ -184,7 +184,6 @@ def pickle_dump(d, filename):
     with open(filename, 'wb') as handle:
         pickle.dump(d, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-
 def argparser():
     '''
     receives from stdin the directory where the data to process are and the path to output
@@ -196,6 +195,7 @@ def argparser():
     args = vars(parser.parse_args())
 
     return args['input'], args['output']
+
 
 if __name__ == '__main__':
     ApacheLogFormatter()
