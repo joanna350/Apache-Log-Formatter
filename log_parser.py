@@ -137,6 +137,9 @@ class ApacheLogFormatter():
 
 
     def export_json(self, output):
+        '''
+        export the data to the designated filepath
+        '''
         jsonStr = json.dumps(self.json)
         with open(output, 'w') as jsonf:
             jsonf.write(jsonStr)
