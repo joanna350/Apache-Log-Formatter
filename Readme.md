@@ -1,6 +1,6 @@
 ### Satavia Project
-- process a set of access log files from a user-given directory path
-- produce a report in .json and export to user-set output_path
+- process a set of access log files from a user-given $directory path
+- produce a report in .json and export to user-set $output_path
 
 ### Environment
 - Ubuntu 18.04
